@@ -1,35 +1,36 @@
-.button-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #f2f2f2;
-    z-index: 999; /* Make sure the buttons are on top of everything else */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .button-container {
     display: flex;
-    justify-content: center;
+    height: 100%;
+    width: 100%;
     align-items: center;
-    height: 100vh; /* Make the container full height */
-    width: 100vw; /* Make the container full width */
-    overflow: hidden; /* Hide any excess space around the buttons */
+    justify-content: center;
   }
   
-  .english {
-    background-image: url('https://example.com/english-button.jpg');
+  .button {
+    background-image: url('english.png');
     background-size: cover;
-    width: 100%;
-    padding: 20px;
+    background-position: center;
+    width: 50%;
+    height: 100%;
     border: none;
     cursor: pointer;
   }
   
-  .espanol {
-    background-image: url('https://example.com/espanol-button.jpg');
-    background-size: cover;
-    width: 100%;
-    padding: 20px;
-    border: none;
-    cursor: pointer;
+  .button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button.english {
+    background-image: url('english.png');
+  }
+  
+  .button.espanol {
+    background-image: url('espanol.png');
   }
 
   /* Define the red line */
