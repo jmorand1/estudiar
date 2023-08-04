@@ -16,7 +16,7 @@ html, body {
   }
   
   .button.english {
-    background-image: url('assets\language\english.jpg');
+    background-image: url('C:\Users\yulcr\Escritorio\Coding\GitHub\estudiar\assets\language\english.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -29,7 +29,7 @@ html, body {
   }
   
   .button.espanol {
-    background-image: url('assets\language\espanol.jpg');
+    background-image: url('C:\Users\yulcr\Escritorio\Coding\GitHub\estudiar\assets\language\espanol.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
