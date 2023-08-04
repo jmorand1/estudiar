@@ -1,39 +1,28 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0;
-  }
-  
-  .container {
-    display: flex;
-    width: 100%;
-    max-width: 1080px; /* Adjust the maximum width as needed */
-  }
-  
-  .button {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    transition: background-color 0.3s, color 0.3s;
-    cursor: pointer;
-    font-size: 24px;
-  }
-  
-  .button:first-child {
-    background-image: url('/assets/language/english.jpg'); /* Replace with your image URL */
-  }
-  
-  .button:last-child {
-    background-image: url('/assets/language/espanol.jpg'); /* Replace with your image URL */
-  }
-  
-  .button:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white; /*sdasdasd*/
-  }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.button {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
