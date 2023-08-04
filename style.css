@@ -11,6 +11,7 @@
     align-items: center;
     height: 100vh; /* Make the container full height */
     width: 100vw; /* Make the container full width */
+    overflow: hidden; /* Hide any excess space around the buttons */
   }
   
   .english {
