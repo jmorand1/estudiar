@@ -5,13 +5,11 @@ body, html {
   font-family: Arial, sans-serif;
 }
 
-.container {
+.button-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Usar la unidad de vista completa */
-  margin: 0; /* Eliminar el margen por defecto */
-  padding: 0; /* Eliminar el padding por defecto */
+  height: 50%; /* Cada botón cubre la mitad de la pantalla */
 }
 
 .button {
@@ -23,15 +21,10 @@ body, html {
   cursor: pointer;
   margin: 10px;
   border-radius: 5px;
-  flex: 1; /* Usar flex para expandir los botones */
+  flex: 1;
+  width: 100%; /* El botón ocupa todo el ancho disponible */
 }
 
 .button:hover {
   background-color: #2980b9;
 }
-Con estos cambios, los botones deberían ocupar toda la altura de la pantalla utilizando la unidad de vista completa (100vh) y expandirse para cubrir el ancho disponible utilizando la propiedad flex: 1. Espero que este código cumpla con tus requisitos.
-
-
-
-
-
