@@ -1,0 +1,27 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    height: 100%;
+    background-image: url('path/to/your/image.jpg'); /* Replace this URL with your image path */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language-btn {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.language-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
