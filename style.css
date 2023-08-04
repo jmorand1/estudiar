@@ -1,55 +1,46 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-container {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.button {
-  background-image: url("english.png");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.button:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.button.english {
-  background-image: url("assets\language\english.jpg");
-}
-
-.button.espanol {
-  background-image: url("assets\language\espanol.jpg");
-}
-
-.red-line {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  height: 100%;
-  background-color: red;
-}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .button-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .button.english {
+    background-image: url('assets\language\english.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .button.espanol {
+    background-image: url('assets\language\espanol.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
