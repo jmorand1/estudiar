@@ -11,7 +11,7 @@ body, html {
   .container {
     display: flex;
     width: 100%;
-    max-width: 600px; /* Adjust the maximum width as needed */
+    max-width: 1080px; /* Adjust the maximum width as needed */
   }
   
   .button {
@@ -35,5 +35,5 @@ body, html {
   
   .button:hover {
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: white; /*sdasdasd*/
   }
