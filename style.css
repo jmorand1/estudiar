@@ -1,46 +1,33 @@
-html, body {
-    height: 100%;
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
   }
   
-  .button-container {
+  .container {
     display: flex;
     height: 100%;
-    width: 100%;
+  }
+  
+  .button {
+    flex: 1;
+    display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-size: cover;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
   }
   
-  .button.english {
-    background-image: url('C:\Users\yulcr\Escritorio\Coding\GitHub\estudiar\assets\language\english.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
+  .button:first-child {
+    background-image: url('/assets/language/english.jpg'); /* Replace with your image URL */
   }
   
-  .button.espanol {
-    background-image: url('C:\Users\yulcr\Escritorio\Coding\GitHub\estudiar\assets\language\espanol.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
+  .button:last-child {
+    background-image: url('/assets/language/espanol.jpg'); /* Replace with your image URL */
   }
   
   .button:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
   }
