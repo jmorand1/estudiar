@@ -1,28 +1,18 @@
-body, html {
+body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.container {
   display: flex;
-  width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
-.half {
-  flex: 1;
-  height: 100%;
-}
-
-.blue {
+.izquierda {
+  width: 50%;
   background-color: blue;
   cursor: pointer;
 }
 
-.red {
+.derecha {
+  width: 50%;
   background-color: red;
   cursor: pointer;
 }

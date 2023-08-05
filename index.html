@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<title>Pantalla Dividida</title>
+<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <div class="container">
-    <div class="half blue" onclick="redirectToPage('izquierda.html')"></div>
-    <div class="half red" onclick="redirectToPage('derecha.html')"></div>
-  </div>
+  <div class="izquierda" onclick="redirigir('pagina_izquierda.html')"></div>
+  <div class="derecha" onclick="redirigir('pagina_derecha.html')"></div>
+
+  <script>
+    function redirigir(url) {
+      window.location.href = url;
+    }
+  </script>
 </body>
 </html>
