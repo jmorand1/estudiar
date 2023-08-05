@@ -3,7 +3,7 @@ body {
   padding: 0;
   display: flex;
   height: 100vh;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 .izquierda {
@@ -16,6 +16,7 @@ body {
   align-items: center;
   font-size: 2rem;
   color: darkgrey;
+  backdrop-filter: brightness(120%);
 }
 
 .derecha {
@@ -28,6 +29,7 @@ body {
   align-items: center;
   font-size: 2rem;
   color: darkgrey;
+  backdrop-filter: brightness(120%);
 }
 
 @media print {
