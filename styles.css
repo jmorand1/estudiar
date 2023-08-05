@@ -2,9 +2,10 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  height: 100vh;
-  font-size: 16px;
+  min-height: 100vh;
+  font-size: 16px; /* Fixed font size */
   position: relative;
+  text-size-adjust: none; /* Disable automatic text size adjustment */
 }
 
 .izquierda,
@@ -50,7 +51,7 @@ body {
 /* Increase the font size on hover */
 .izquierda:hover,
 .derecha:hover {
-  font-size: 2.2rem;
+  font-size: 3rem;
 }
 
 @media print {
