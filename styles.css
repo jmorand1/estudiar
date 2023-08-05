@@ -4,7 +4,7 @@ body {
   display: flex;
   height: 100vh;
   font-size: 16px;
-  position: relative; /* Add position relative to the body */
+  position: relative;
 }
 
 .izquierda,
@@ -17,7 +17,8 @@ body {
   font-size: 2rem;
   color: black;
   background-size: cover;
-  position: relative; /* Add position relative to the buttons */
+  position: relative;
+  overflow: hidden; /* Hide the overlay when not hovered */
 }
 
 .izquierda::before,
@@ -28,8 +29,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value to control brightness */
-  pointer-events: none; /* Ensure the overlay doesn't block clicks */
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  transition: opacity 0.3s ease; /* Add a transition for a smooth effect */
+}
+
+.izquierda:hover::before,
+.derecha:hover::before {
+  opacity: 0; /* On hover, make the overlay disappear */
 }
 
 .izquierda {
@@ -40,8 +47,13 @@ body {
   background-image: url("assets/language/espanol.jpg");
 }
 
+/* Increase the font size on hover */
+.izquierda:hover,
+.derecha:hover {
+  font-size: 2.2rem;
+}
+
 @media print {
-  /* Tamaño de fuente constante para la versión de impresión */
   body {
     font-size: 16px;
   }
