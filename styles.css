@@ -16,7 +16,7 @@ body {
   align-items: center;
   font-size: 2rem;
   color: darkgrey;
-  backdrop-filter: brightness(120%);
+  filter: brightness(50%);
 }
 
 .derecha {
@@ -29,7 +29,7 @@ body {
   align-items: center;
   font-size: 2rem;
   color: darkgrey;
-  backdrop-filter: brightness(120%);
+  filter: brightness(50%);
 }
 
 @media print {
