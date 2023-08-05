@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
-<title>División de Pantalla</title>
+<title>Pantalla Dividida</title>
 </head>
 <body>
-  <div class="izquierda">
-    <a href="pagina_izquierda.html">Ir a la izquierda</a>
-  </div>
-  <div class="derecha">
-    <a href="pagina_derecha.html">Ir a la derecha</a>
+  <div class="container">
+    <div class="half blue" onclick="redirectToPage('izquierda.html')"></div>
+    <div class="half red" onclick="redirectToPage('derecha.html')"></div>
   </div>
 </body>
 </html>
