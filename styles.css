@@ -9,10 +9,20 @@ body {
   width: 50%;
   background-color: blue;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
 }
 
 .derecha {
   width: 50%;
   background-color: red;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
 }
