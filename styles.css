@@ -6,30 +6,41 @@ body {
   font-size: 16px;
 }
 
-.izquierda {
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.izquierda,
+.derecha {
   width: 50%;
-  background: url("assets/language/english.jpg") no-repeat center center
-    brightness(50%);
-  background-size: cover;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   color: darkgrey;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.582); /* You can adjust the alpha value to control the brightness */
+}
+
+.izquierda {
+  background: url("assets/language/english.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .derecha {
-  width: 50%;
-  background: url("assets/language/espanol.jpg") no-repeat center center
-    brightness(50%);
+  background: url("assets/language/espanol.jpg") no-repeat center center;
   background-size: cover;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  color: darkgrey;
 }
 
 @media print {
@@ -40,5 +51,7 @@ body {
   .izquierda,
   .derecha {
     font-size: 2rem;
+    /* You can apply the brightness overlay to the images in print mode as well if needed */
+    filter: brightness(0.7); /* You can adjust the value as needed */
   }
 }
