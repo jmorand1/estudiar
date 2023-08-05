@@ -7,9 +7,7 @@ body {
 
 .izquierda {
   width: 50%;
-  background-image: url('imagen_izquierda.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: grey;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -20,9 +18,7 @@ body {
 
 .derecha {
   width: 50%;
-  background-image: url('imagen_derecha.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: black;
   cursor: pointer;
   display: flex;
   justify-content: center;
