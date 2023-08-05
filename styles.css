@@ -7,24 +7,24 @@ body {
 
 .izquierda {
   width: 50%;
-  background: url('assets\language\english.jpg') no-repeat center center;
+  background: url('assets/language/english.jpg') no-repeat center center;
   background-size: cover;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  color: white;
+  color: darkgrey;
 }
 
 .derecha {
   width: 50%;
-  background: url('assets\language\espanol.jpg') no-repeat center center;
+  background: url('assets/language/espanol.jpg') no-repeat center center;
   background-size: cover;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  color: white;
+  color: darkgrey;
 }
