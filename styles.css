@@ -4,6 +4,7 @@ body {
   display: flex;
   height: 100vh;
   font-size: 16px;
+  position: relative; /* Add position relative to the body */
 }
 
 .izquierda,
@@ -16,24 +17,27 @@ body {
   font-size: 2rem;
   color: black;
   background-size: cover;
+  position: relative; /* Add position relative to the buttons */
 }
 
-.english {
+.izquierda::before,
+.derecha::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value to control brightness */
+  pointer-events: none; /* Ensure the overlay doesn't block clicks */
+}
+
+.izquierda {
   background-image: url("assets/language/english.jpg");
 }
 
-.espanol {
+.derecha {
   background-image: url("assets/language/espanol.jpg");
-}
-
-/* Lower the brightness for the English button */
-.english {
-  filter: brightness(0.7);
-}
-
-/* Lower the brightness for the Español button */
-.espanol {
-  filter: brightness(0.7);
 }
 
 @media print {
