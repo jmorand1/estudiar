@@ -7,7 +7,8 @@ body {
 
 .izquierda {
   width: 50%;
-  background-color: grey;
+  background: url('assets\language\english.jpg') no-repeat center center;
+  background-size: cover;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -18,7 +19,8 @@ body {
 
 .derecha {
   width: 50%;
-  background-color: black;
+  background: url('assets\language\espanol.jpg') no-repeat center center;
+  background-size: cover;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -26,4 +28,3 @@ body {
   font-size: 24px;
   color: white;
 }
-/*sdasd*/
