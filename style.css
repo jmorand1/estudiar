@@ -1,27 +1,39 @@
-body, html {
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.container {
+.izquierda {
+  width: 50%;
+  background-color: blue;
   display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.half {
-  flex: 1;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  cursor: pointer;
+  justify-content: center;
 }
 
-.top {
-  background-color: #f0f0f0;
+.derecha {
+  width: 50%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.bottom {
-  background-color: #e0e0e0;
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
 }
