@@ -1,13 +1,16 @@
-body {
+body, html {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+.container {
   display: flex;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
 }
 
 .izquierda {
-  width: 50%;
+  flex: 1;
   background-color: blue;
   display: flex;
   align-items: center;
@@ -15,7 +18,7 @@ body {
 }
 
 .derecha {
-  width: 50%;
+  flex: 1;
   background-color: red;
   display: flex;
   align-items: center;
