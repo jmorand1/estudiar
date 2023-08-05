@@ -19,7 +19,7 @@ body {
   color: black;
   background-size: cover;
   position: relative;
-  overflow: hidden; /* Hide the overlay when not hovered */
+  overflow: hidden;
 }
 
 .izquierda::before,
@@ -32,12 +32,6 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   pointer-events: none;
-  transition: opacity 0.3s ease; /* Add a transition for a smooth effect */
-}
-
-.izquierda:hover::before,
-.derecha:hover::before {
-  opacity: 0; /* On hover, make the overlay disappear */
 }
 
 .izquierda {
@@ -46,12 +40,6 @@ body {
 
 .derecha {
   background-image: url("assets/language/espanol.jpg");
-}
-
-/* Increase the font size on hover */
-.izquierda:hover,
-.derecha:hover {
-  font-size: 3rem;
 }
 
 @media print {
