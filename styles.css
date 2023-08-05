@@ -3,6 +3,7 @@ body {
   padding: 0;
   display: flex;
   height: 100vh;
+  font-size: 16px; 
 }
 
 .izquierda {
@@ -13,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 2rem;
   color: darkgrey;
 }
 
@@ -25,6 +26,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 2rem;
   color: darkgrey;
 }
+
+@media print {
+  /* Tamaño de fuente constante para la versión de impresión */
+  body {
+    font-size: 16px;
+  }
+  .izquierda, .derecha {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
